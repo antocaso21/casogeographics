@@ -199,13 +199,14 @@ body[data-lang="it"] [data-lang-en] { display: none; }
   position: absolute; inset: 0; z-index: 0;
   background: var(--ink);
 }
-.hero-video video {
-  position: absolute; top: 50%; left: 50%;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  opacity: 0.42;
+.hero-video {
+  position: absolute; 
+  inset: 0; 
+  z-index: 0;
+  background-image: url("hero_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* fallback */
 .hero-video::before {
@@ -966,12 +967,7 @@ footer {
 </nav>
 
 <!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-  <div class="hero-video">
-    <video autoplay muted loop playsinline preload="metadata">
-      <source src="hero_video.mp4" type="video/mp4" />
-    </video>
-  </div>
+<div class="hero-video hero-image"></div>
 
   <!-- vertical coordinates ribbon -->
   <div class="hero-coords">
