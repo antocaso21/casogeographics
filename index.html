@@ -864,8 +864,18 @@ footer {
   align-items: center; flex-wrap: wrap;
   gap: 1rem;
 }
-.footer-brand { display: flex; align-items: center; gap: 0.6rem; }
-.footer-brand img { height: 22px; width: 22px; object-fit: contain; }
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-brand img {
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 .footer .coords { color: var(--terra); }
 
 /* ===== ANIMATIONS =========================================== */
@@ -1275,8 +1285,9 @@ footer {
 
 <footer>
   <div class="footer-brand">
-    <span>© 2026 Antonio Caso</span>
-  </div>
+  <img src="logo_seal.png" alt="Caso Geographics" />
+  <span>© 2026 Antonio Caso</span>
+</div>
   <div class="coords">41°07′ N · 16°52′ E · Bari</div>
   <div data-lang-en>
     VAT NUMBER 03924941200· <a href="privacy-policy.pdf" target="_blank" rel="noopener">Privacy</a>
