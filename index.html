@@ -335,6 +335,27 @@ section {padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 4rem); position: rel
   background-attachment: fixed;
   text-align: center;
   border-bottom: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("logo_seal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: min(560px, 55vw);
+  opacity: 0.075;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.story .container {
+  position: relative;
+  z-index: 1;
 }
 .story .eyebrow { margin-bottom: 2rem; }
 
